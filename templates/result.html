@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Similar Images</title>
+</head>
+<body>
+    <ul>
+        {% for url in urls %}
+            <li><a href="{{ url }}">{{ url }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

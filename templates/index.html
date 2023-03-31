@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Similar Images</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form action="/find_similar_images" method="post">
+        Image URL: <input type="text" name="image_url">
+        <input type="submit" value="Find Similar Images">
+    </form>
+</body>
+</html>
