@@ -11,7 +11,7 @@ def index():
 @app.route('/find_similar_images', methods=['POST'])
 def find_similar_images():
     image_url = request.form['image_url']
-    api_key = 'AIzaSyBRDpX8O4QYgGSaobXB-TqLDr-jyaxtkiY'
+    api_key = 'YOUR_API_KEY'
     service = build("vision", "v1", developerKey=api_key)
     vision_request = service.images().annotate(body={
         'requests': [{
